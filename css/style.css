@@ -1,0 +1,64 @@
+/**************
+***education***
+**************/
+  #education{
+    padding:50px;
+    background-color:#f6f6f6;
+    height: 100vh;
+
+  }
+  .item{
+    color:#aaa;
+    background-color: #fff;
+    padding: 10px;
+    position:absolute;
+    width: 95%;
+    display: inline-block;
+    border-width: 0px;
+    top:0px;
+    left:15px;
+    right: auto;
+    transition-duration: 0.2s;
+    transition-delay: 0.4s;
+    transition-timing-function: ease;
+    overflow: hidden;
+    box-shadow: 0 0 0  #777;
+  }
+
+  .item:before,.item:after{
+    content: '';
+    display: inline-block;
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+  }
+  .item:after{
+    background: linear-gradient(to left,#777 1% ,transparent 0%,transparent 99%, #777 1%);
+    transform: skewY(-80deg) scaleY(0);
+    transition-delay: 0.2s;
+
+  }
+  .item:before{
+    background: linear-gradient(to top,#777 1% ,transparent 0%,transparent 99%, #777 1%);
+    transform: skewX(80deg) scaleX(0);
+
+  }
+  .item:hover:before,.item:hover:after{
+    transform: skew(0deg) scaleX(1);
+
+  }
+  .item:hover{
+    top:-5px;
+    left:10px;
+    box-shadow: 15px 15px 0  #777;
+  }
+  h3{
+    color:#000;
+  }
+/**************
+***education***
+**************/
